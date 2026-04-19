@@ -253,8 +253,9 @@ export default function ComparePage() {
       const other = c.autobahnPerformanceRating
       if (!other) return
       const commonality = c.commonality ?? 50
-      if (other > reference) faster += commonality
-      else if (other < reference) slower += commonality
+      const diff = other - reference
+      if (diff > 1.0) faster += commonality
+      else if (diff < -1.0) slower += commonality
       else comparable += commonality
     })
     return { faster, slower, comparable }
