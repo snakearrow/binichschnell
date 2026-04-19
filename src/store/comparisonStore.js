@@ -36,18 +36,18 @@ const useComparisonStore = create((set, get) => ({
 
   getComparisonStats: (car) => {
     const { allCars } = get()
-    const reference = car.acceleration?.['0_100']
+    const reference = car.autobahnPerformanceRating
     if (!reference) return { faster: 0, slower: 0, comparable: 0 }
-    const threshold = 0.5
+    const threshold = 1.0
     let faster = 0, slower = 0, comparable = 0
     allCars.forEach(c => {
       if (c.id === car.id) return
-      const other = c.acceleration?.['0_100']
+      const other = c.autobahnPerformanceRating
       if (!other) return
       const diff = other - reference
-      if (diff < -threshold) faster++
-      else if (diff > threshold) slower++
-      else comparable++
+      if (Math.abs(diff) <= threshold) comparable++
+      else if (diff > 0) faster++
+      else slower++
     })
     return { faster, slower, comparable }
   },
@@ -73,17 +73,17 @@ const useComparisonStore = create((set, get) => ({
 
   getComparableCars: (car) => {
     const { allCars } = get()
-    const reference = car.acceleration?.['0_100']
+    const reference = car.autobahnPerformanceRating
     if (!reference) return []
-    const threshold = 0.5
+    const threshold = 1.0
     return allCars
       .filter(c => {
         if (c.id === car.id) return false
-        const other = c.acceleration?.['0_100']
+        const other = c.autobahnPerformanceRating
         if (!other) return false
         return Math.abs(other - reference) <= threshold
       })
-      .map(c => ({ car: c, delta: (c.acceleration['0_100'] || 0) - reference }))
+      .map(c => ({ car: c, delta: (c.autobahnPerformanceRating || 0) - reference }))
       .sort((a, b) => a.delta - b.delta)
   },
 }))

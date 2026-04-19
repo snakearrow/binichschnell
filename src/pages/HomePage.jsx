@@ -66,7 +66,8 @@ export default function HomePage() {
   const getPerformanceCategory = (rating) => {
     if (rating < 10) return { label: 'Niedrig', color: 'bg-red-100 text-red-700' }
     if (rating < 15) return { label: 'Mittel', color: 'bg-blue-100 text-blue-700' }
-    return { label: 'Gut', color: 'bg-green-100 text-green-700' }
+    if (rating < 23) return { label: 'Gut', color: 'bg-green-100 text-green-700' }
+    return { label: 'Krass', color: 'bg-violet-100 text-violet-700' }
   }
 
   const filteredCars = useMemo(() => {

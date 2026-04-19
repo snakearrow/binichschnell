@@ -68,6 +68,13 @@ function HeroStats({ car, stats, activeFilter, onFilterChange }) {
   )
 }
 
+function getPerformanceCategory(rating) {
+  if (rating < 10) return { label: 'Niedrig', color: 'bg-red-100 text-red-700' }
+  if (rating < 15) return { label: 'Mittel', color: 'bg-blue-100 text-blue-700' }
+  if (rating < 23) return { label: 'Gut', color: 'bg-green-100 text-green-700' }
+  return { label: 'Krass', color: 'bg-violet-100 text-violet-700' }
+}
+
 function AccelerationBars({ car }) {
   const times = [
     { label: '0–50 km/h', value: car.acceleration?.['0_50'] },
@@ -97,6 +104,20 @@ function AccelerationBars({ car }) {
             </div>
           </div>
         ))}
+      </div>
+    </div>
+  )
+}
+
+function AutobahnPerformanceCard({ car }) {
+  const category = getPerformanceCategory(car.autobahnPerformanceRating)
+
+  return (
+    <div className="mb-12">
+      <p className="text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-4">Autobahn Performance Rating</p>
+      <div className="flex items-center gap-4">
+        <div className="text-4xl font-bold text-zinc-900 tabular-nums">{car.autobahnPerformanceRating.toFixed(2)}</div>
+        <span className={`px-4 py-2 rounded-full text-sm font-semibold ${category.color}`}>{category.label}</span>
       </div>
     </div>
   )
@@ -174,13 +195,13 @@ function ComparableList({ car, comparableCars, selectedPowertrain, onFilterChang
                 <p className="text-xs text-zinc-500">{c.ps} PS</p>
               </div>
               <div className="text-right">
-                <p className="text-sm font-bold text-zinc-900 tabular-nums">{c.acceleration?.['0_100']?.toFixed(2)}s</p>
+                <p className="text-sm font-bold text-zinc-900 tabular-nums">{c.autobahnPerformanceRating?.toFixed(2)}</p>
                 <p className={`text-xs font-semibold tabular-nums ${
                   delta < -0.05 ? 'text-red-600' :
                   delta > 0.05 ? 'text-blue-600' :
                   'text-zinc-400'
                 }`}>
-                  {delta < -0.05 ? '−' : delta > 0.05 ? '+' : '±'}{Math.abs(delta).toFixed(2)}s
+                  {delta < -0.05 ? '−' : delta > 0.05 ? '+' : '±'}{Math.abs(delta).toFixed(2)}
                 </p>
               </div>
             </div>
@@ -206,7 +227,7 @@ export default function ComparePage() {
   }
 
   const car = selectedCars[0]
-  const reference = car.acceleration?.['0_100']
+  const reference = car.autobahnPerformanceRating
 
   // Display count in HeroStats cards (raw count)
   const statsCount = getComparisonStats(car)
@@ -226,16 +247,14 @@ export default function ComparePage() {
   // Verdict calculation (weighted by commonality)
   const getStatsWeighted = () => {
     if (!reference) return { faster: 0, slower: 0, comparable: 0 }
-    const threshold = 0.5
     let faster = 0, slower = 0, comparable = 0
     filteredCars.forEach(c => {
       if (c.id === car.id) return
-      const other = c.acceleration?.['0_100']
+      const other = c.autobahnPerformanceRating
       if (!other) return
       const commonality = c.commonality ?? 50
-      const diff = other - reference
-      if (diff < -threshold) faster += commonality
-      else if (diff > threshold) slower += commonality
+      if (other > reference) faster += commonality
+      else if (other < reference) slower += commonality
       else comparable += commonality
     })
     return { faster, slower, comparable }
@@ -246,10 +265,10 @@ export default function ComparePage() {
   const getFasterCars = () => {
     if (!reference) return []
     return filteredCars
-      .filter(c => c.id !== car.id && c.acceleration?.['0_100'] && c.acceleration['0_100'] < reference)
+      .filter(c => c.id !== car.id && c.autobahnPerformanceRating && c.autobahnPerformanceRating > reference)
       .map(c => ({
         car: c,
-        delta: c.acceleration['0_100'] - reference
+        delta: c.autobahnPerformanceRating - reference
       }))
       .sort((a, b) => b.delta - a.delta)
       .slice(0, 10)
@@ -258,10 +277,10 @@ export default function ComparePage() {
   const getSlowerCars = () => {
     if (!reference) return []
     return filteredCars
-      .filter(c => c.id !== car.id && c.acceleration?.['0_100'] && c.acceleration['0_100'] > reference)
+      .filter(c => c.id !== car.id && c.autobahnPerformanceRating && c.autobahnPerformanceRating < reference)
       .map(c => ({
         car: c,
-        delta: c.acceleration['0_100'] - reference
+        delta: c.autobahnPerformanceRating - reference
       }))
       .sort((a, b) => a.delta - b.delta)
       .slice(0, 10)
@@ -269,15 +288,15 @@ export default function ComparePage() {
 
   const getSimilarCars = () => {
     if (!reference) return []
-    const threshold = 0.5
+    const threshold = 1.0
     return filteredCars
       .filter(c => {
         if (c.id === car.id) return false
-        const other = c.acceleration?.['0_100']
+        const other = c.autobahnPerformanceRating
         if (!other) return false
         return Math.abs(other - reference) <= threshold
       })
-      .map(c => ({ car: c, delta: (c.acceleration['0_100'] || 0) - reference }))
+      .map(c => ({ car: c, delta: (c.autobahnPerformanceRating || 0) - reference }))
       .sort((a, b) => a.delta - b.delta)
   }
 
@@ -317,6 +336,7 @@ export default function ComparePage() {
 
         <HeroStats car={car} stats={statsCount} activeFilter={filterMode} onFilterChange={setFilterMode} />
         <AccelerationBars car={car} />
+        <AutobahnPerformanceCard car={car} />
         <VerdictCard faster={statsWeighted.faster} slower={statsWeighted.slower} />
         <ComparableList car={car} comparableCars={comparableCars} selectedPowertrain={filterPowertrain} onFilterChange={setFilterPowertrain} filterMode={filterMode} onSelectCar={selectCar} />
       </div>

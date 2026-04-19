@@ -1,44 +1,6 @@
 {
   "cars": [
     {
-      "id": "audi-a4-40tdi-2015",
-      "name": "Audi A4 40TDI",
-      "productionYears": "2015-2019",
-      "engine": "2.0L Diesel",
-      "powertrainType": "diesel",
-      "ps": 204,
-      "price": 44200,
-      "maxSpeed": 239,
-      "commonality": 80,
-      "autobahnPerformanceRating": 13.06,
-      "acceleration": {
-        "0_50": 2.3,
-        "0_100": 7.2,
-        "80_120": 7.3,
-        "0_200": 34.6,
-        "100_200": 27.4
-      }
-    },
-    {
-      "id": "bmw-320d-2024",
-      "name": "BMW 320d",
-      "productionYears": "2024-2026",
-      "engine": "2.0L Diesel",
-      "powertrainType": "diesel",
-      "ps": 190,
-      "price": 53900,
-      "maxSpeed": 230,
-      "commonality": 85,
-      "autobahnPerformanceRating": 11.42,
-      "acceleration": {
-        "0_50": 2.3,
-        "0_100": 6.9,
-        "80_120": 6.6,
-        "0_200": 38.2,
-        "100_200": 30.5
-      }
-    },
-    {
       "id": "vw-passat-b9-2.0-tdi-150",
       "name": "VW Passat B9 2.0 TDI 150PS",
       "productionYears": "2023-2026",
@@ -55,6 +17,25 @@
         "80_120": 6.7,
         "0_200": 50.8,
         "100_200": 41.5
+      }
+    },
+    {
+      "id": "bmw-f30-320d-touring",
+      "name": "BMW 320d Touring (F30/F31)",
+      "productionYears": "2015-2019",
+      "engine": "2.0L Inline-4 Turbo Diesel (B47)",
+      "powertrainType": "diesel",
+      "ps": 190,
+      "price": 42000,
+      "maxSpeed": 230,
+      "commonality": 60,
+      "autobahnPerformanceRating": 13.86,
+      "acceleration": {
+        "0_50": 2.7,
+        "0_100": 7.5,
+        "80_120": 5.6,
+        "0_200": 39.5,
+        "100_200": 31.0
       }
     },
     {
@@ -264,6 +245,44 @@
         "80_120": 8.2,
         "0_200": 0,
         "100_200": 0
+      }
+    },
+    {
+      "id": "audi-s6-c8-tdi-344-2023-2025",
+      "name": "Audi S6 C8 TDI 344PS",
+      "productionYears": "2023-2025",
+      "engine": "3.0L V6 Turbo Diesel (EA897 evo, Mild Hybrid 48V)",
+      "powertrainType": "diesel",
+      "ps": 344,
+      "price": 94900,
+      "maxSpeed": 250,
+      "commonality": 10,
+      "autobahnPerformanceRating": 21.29,
+      "acceleration": {
+        "0_50": 2.2,
+        "0_100": 5.0,
+        "80_120": 3.4,
+        "0_200": 22.5,
+        "100_200": 17.5
+      }
+    },
+    {
+      "id": "ford-mustang-gt-5-0-ti-vct",
+      "name": "Ford Mustang GT 5.0 Ti-VCT",
+      "productionYears": "2017-2023",
+      "engine": "5.0L V8 Ti-VCT Naturally Aspirated Petrol",
+      "powertrainType": "gasoline",
+      "ps": 450,
+      "price": 58000,
+      "maxSpeed": 250,
+      "commonality": 5,
+      "autobahnPerformanceRating": 23.01,
+      "acceleration": {
+        "0_50": 2.0,
+        "0_100": 4.3,
+        "80_120": 3.2,
+        "0_200": 16.8,
+        "100_200": 12.5
       }
     }
   ]
