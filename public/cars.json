@@ -1,0 +1,270 @@
+{
+  "cars": [
+    {
+      "id": "audi-a4-40tdi-2015",
+      "name": "Audi A4 40TDI",
+      "productionYears": "2015-2019",
+      "engine": "2.0L Diesel",
+      "powertrainType": "diesel",
+      "ps": 204,
+      "price": 44200,
+      "maxSpeed": 239,
+      "commonality": 80,
+      "autobahnPerformanceRating": 13.06,
+      "acceleration": {
+        "0_50": 2.3,
+        "0_100": 7.2,
+        "80_120": 7.3,
+        "0_200": 34.6,
+        "100_200": 27.4
+      }
+    },
+    {
+      "id": "bmw-320d-2024",
+      "name": "BMW 320d",
+      "productionYears": "2024-2026",
+      "engine": "2.0L Diesel",
+      "powertrainType": "diesel",
+      "ps": 190,
+      "price": 53900,
+      "maxSpeed": 230,
+      "commonality": 85,
+      "autobahnPerformanceRating": 11.42,
+      "acceleration": {
+        "0_50": 2.3,
+        "0_100": 6.9,
+        "80_120": 6.6,
+        "0_200": 38.2,
+        "100_200": 30.5
+      }
+    },
+    {
+      "id": "vw-passat-b9-2.0-tdi-150",
+      "name": "VW Passat B9 2.0 TDI 150PS",
+      "productionYears": "2023-2026",
+      "engine": "2.0L Inline-4 Turbo Diesel",
+      "powertrainType": "diesel",
+      "ps": 150,
+      "price": 48495,
+      "maxSpeed": 223,
+      "commonality": 85,
+      "autobahnPerformanceRating": 6.42,
+      "acceleration": {
+        "0_50": 3.2,
+        "0_100": 9.3,
+        "80_120": 6.7,
+        "0_200": 50.8,
+        "100_200": 41.5
+      }
+    },
+    {
+      "id": "vw-passat-b9-2.0-tdi-4motion-193",
+      "name": "VW Passat B9 2.0 TDI 4Motion 193PS",
+      "productionYears": "2024-2026",
+      "engine": "2.0L Inline-4 Turbo Diesel (EA288 evo)",
+      "powertrainType": "diesel",
+      "ps": 193,
+      "price": 56000,
+      "maxSpeed": 232,
+      "commonality": 70,
+      "autobahnPerformanceRating": 13.63,
+      "acceleration": {
+        "0_50": 2.9,
+        "0_100": 7.6,
+        "80_120": 5.5,
+        "0_200": 32.5,
+        "100_200": 24.5
+      }
+    },
+    {
+      "id": "vw-passat-b9-1.5-etsi-act-150",
+      "name": "VW Passat B9 1.5 eTSI ACT 150PS",
+      "productionYears": "2023-2026",
+      "engine": "1.5L Inline-4 Turbo Petrol (EA211 evo2, Mild Hybrid 48V, ACT)",
+      "powertrainType": "gasoline",
+      "ps": 150,
+      "price": 44995,
+      "maxSpeed": 222,
+      "commonality": 75,
+      "autobahnPerformanceRating": 7.12,
+      "acceleration": {
+        "0_50": 3.3,
+        "0_100": 9.3,
+        "80_120": 6.8,
+        "0_200": 48.0,
+        "100_200": 38.5
+      }
+    },
+    {
+      "id": "vw-golf-8-1.5-tsi-act-150",
+      "name": "VW Golf VIII 1.5 TSI ACT 150PS",
+      "productionYears": "2020-2024",
+      "engine": "1.5L Inline-4 Turbo Petrol (EA211 evo, ACT)",
+      "powertrainType": "gasoline",
+      "ps": 150,
+      "price": 28900,
+      "maxSpeed": 224,
+      "commonality": 95,
+      "autobahnPerformanceRating": 12.13,
+      "acceleration": {
+        "0_50": 3.0,
+        "0_100": 8.6,
+        "80_120": 6.0,
+        "0_200": 42.0,
+        "100_200": 33.5
+      }
+    },
+    {
+      "id": "vw-polo-6-1.0-tsi-95-2024",
+      "name": "VW Polo VI 1.0 TSI 95PS",
+      "productionYears": "2024-2026",
+      "engine": "1.0L Inline-3 Turbo Petrol (EA211)",
+      "powertrainType": "gasoline",
+      "ps": 95,
+      "price": 23950,
+      "maxSpeed": 188,
+      "commonality": 90,
+      "autobahnPerformanceRating": 3.64,
+      "acceleration": {
+        "0_50": 4.2,
+        "0_100": 10.8,
+        "80_120": 8.5,
+        "0_200": null,
+        "100_200": null
+      }
+    },
+    {
+      "id": "vw-tiguan-2-1.5-tsi-act-150",
+      "name": "VW Tiguan II 1.5 TSI ACT 150PS",
+      "productionYears": "2020-2024",
+      "engine": "1.5L Inline-4 Turbo Petrol (EA211 evo, ACT)",
+      "powertrainType": "gasoline",
+      "ps": 150,
+      "price": 32930,
+      "maxSpeed": 202,
+      "commonality": 80,
+      "autobahnPerformanceRating": 6.65,
+      "acceleration": {
+        "0_50": 3.4,
+        "0_100": 9.5,
+        "80_120": 7.0,
+        "0_200": 52.0,
+        "100_200": 42.5
+      }
+    },
+    {
+      "id": "bmw-x1-u11-xdrive30e-326",
+      "name": "BMW X1 U11 xDrive30e 326PS",
+      "productionYears": "2023-2026",
+      "engine": "1.5L Inline-3 Turbo Petrol + Electric Motor (Plug-in Hybrid, AWD)",
+      "powertrainType": "hybrid",
+      "ps": 326,
+      "price": 57000,
+      "maxSpeed": 205,
+      "commonality": 25,
+      "autobahnPerformanceRating": 16.21,
+      "acceleration": {
+        "0_50": 2.6,
+        "0_100": 5.6,
+        "80_120": 3.8,
+        "0_200": 24.0,
+        "100_200": 18.5
+      }
+    },
+    {
+      "id": "bmw-g21-330e-touring-292-2024",
+      "name": "BMW 330e Touring (G21 LCI) 292PS",
+      "productionYears": "2024-2026",
+      "engine": "2.0L Inline-4 Turbo Petrol + Electric Motor (Plug-in Hybrid, B48)",
+      "powertrainType": "hybrid",
+      "ps": 292,
+      "price": 58900,
+      "maxSpeed": 230,
+      "commonality": 35,
+      "autobahnPerformanceRating": 18.17,
+      "acceleration": {
+        "0_50": 2.5,
+        "0_100": 6.0,
+        "80_120": 4.2,
+        "0_200": 25.5,
+        "100_200": 19.5
+      }
+    },
+    {
+      "id": "skoda-octavia-iv-rs-2.0-tsi-265-2024",
+      "name": "Škoda Octavia IV RS 2.0 TSI 265PS",
+      "productionYears": "2024-2026",
+      "engine": "2.0L Inline-4 Turbo Petrol (EA888 evo4)",
+      "powertrainType": "gasoline",
+      "ps": 265,
+      "price": 46990,
+      "maxSpeed": 250,
+      "commonality": 35,
+      "autobahnPerformanceRating": 20.48,
+      "acceleration": {
+        "0_50": 2.8,
+        "0_100": 6.4,
+        "80_120": 4.5,
+        "0_200": 23.5,
+        "100_200": 17.8
+      }
+    },
+    {
+      "id": "bmw-x5-g05-xdrive50e-313-2023",
+      "name": "BMW X5 G05 xDrive50e 313PS",
+      "productionYears": "2023-2026",
+      "engine": "3.0L Inline-6 Turbo Petrol (B58) + Electric Motor (Plug-in Hybrid)",
+      "powertrainType": "hybrid",
+      "ps": 313,
+      "price": 89900,
+      "maxSpeed": 250,
+      "commonality": 10,
+      "autobahnPerformanceRating": 22.27,
+      "acceleration": {
+        "0_50": 2.4,
+        "0_100": 4.8,
+        "80_120": 3.3,
+        "0_200": 19.0,
+        "100_200": 14.5
+      }
+    },
+    {
+      "id": "audi-a6-c8-40-tdi-204-2023-2025",
+      "name": "Audi A6 C8 40 TDI 204PS",
+      "productionYears": "2023-2025",
+      "engine": "2.0L Inline-4 Turbo Diesel (EA288 evo, Mild Hybrid)",
+      "powertrainType": "diesel",
+      "ps": 204,
+      "price": 58900,
+      "maxSpeed": 245,
+      "commonality": 50,
+      "autobahnPerformanceRating": 16.01,
+      "acceleration": {
+        "0_50": 3.1,
+        "0_100": 7.6,
+        "80_120": 5.8,
+        "0_200": 36.3,
+        "100_200": 28.5
+      }
+    },
+    {
+      "id": "opel-astra-l-1.5-diesel-130-2022-2024",
+      "name": "Opel Astra L 1.5 Diesel 130PS",
+      "productionYears": "2022-2025",
+      "engine": "1.5L Inline-4 Turbo Diesel (DV5 Stellantis engine)",
+      "powertrainType": "diesel",
+      "ps": 130,
+      "price": 29900,
+      "maxSpeed": 208,
+      "commonality": 40,
+      "autobahnPerformanceRating": 5.80,
+      "acceleration": {
+        "0_50": 4.0,
+        "0_100": 10.6,
+        "80_120": 8.2,
+        "0_200": 0,
+        "100_200": 0
+      }
+    }
+  ]
+}
