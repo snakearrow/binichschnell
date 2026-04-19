@@ -436,6 +436,367 @@
         "0_200": 16.8,
         "100_200": 12.5
       }
+    },
+    {
+      "id": "vw-id7-pro-286",
+      "name": "VW ID.7 Pro 286PS",
+      "productionYears": "2023-today",
+      "engine": "Single Electric Motor (Permanent Magnet Synchronous Motor, RWD)",
+      "powertrainType": "electric",
+      "ps": 286,
+      "price": 56900,
+      "maxSpeed": 180,
+      "commonality": 15,
+      "autobahnPerformanceRating": 4.7,
+      "acceleration": {
+        "0_50": 2.2,
+        "0_100": 6.5,
+        "80_120": 3.5,
+        "0_200": 0,
+        "100_200": 0
+      }
+    },
+    {
+      "id": "tesla-model-3-standard-2021",
+      "name": "Tesla Model 3 Standard (RWD)",
+      "productionYears": "2021-today",
+      "engine": "Single Electric Motor (Permanent Magnet Synchronous Motor, RWD)",
+      "powertrainType": "electric",
+      "ps": 283,
+      "price": 42990,
+      "maxSpeed": 201,
+      "commonality": 30,
+      "autobahnPerformanceRating": 14.37,
+      "acceleration": {
+        "0_50": 2.1,
+        "0_100": 6.1,
+        "80_120": 3.3,
+        "0_200": 27.0,
+        "100_200": 20.9
+      }
+    },
+    {
+      "id": "tesla-model-y-standard-range-rwd-2022",
+      "name": "Tesla Model Y Standard Range RWD",
+      "productionYears": "2022-today",
+      "engine": "Single Electric Motor (Permanent Magnet Synchronous Motor, RWD)",
+      "powertrainType": "electric",
+      "ps": 299,
+      "price": 44990,
+      "maxSpeed": 217,
+      "commonality": 30,
+      "autobahnPerformanceRating": 13.39,
+      "acceleration": {
+        "0_50": 2.3,
+        "0_100": 6.9,
+        "80_120": 3.7,
+        "0_200": 32.0,
+        "100_200": 25.0
+      }
+    },
+    {
+      "id": "skoda-fabia-iv-1-0-tsi-evo-116",
+      "name": "Škoda Fabia IV 1.0 TSI EVO 116PS",
+      "productionYears": "2024-today",
+      "engine": "1.0L Inline-3 Turbo Petrol (EA211 EVO)",
+      "powertrainType": "gasoline",
+      "ps": 116,
+      "price": 21900,
+      "maxSpeed": 202,
+      "commonality": 40,
+      "autobahnPerformanceRating": 3.52,
+      "acceleration": {
+        "0_50": 3.6,
+        "0_100": 9.3,
+        "80_120": 7.8,
+        "0_200": 0,
+        "100_200": 0
+      }
+    },
+    {
+      "id": "mercedes-cla-250-plus-electric",
+      "name": "Mercedes-Benz CLA 250+ (Electric)",
+      "productionYears": "2025-today",
+      "engine": "Single Electric Motor (Permanent Magnet Synchronous Motor, RWD)",
+      "powertrainType": "electric",
+      "ps": 272,
+      "price": 55000,
+      "maxSpeed": 210,
+      "commonality": 30,
+      "autobahnPerformanceRating": 13.97,
+      "acceleration": {
+        "0_50": 2.3,
+        "0_100": 6.7,
+        "80_120": 3.4,
+        "0_200": 29.5,
+        "100_200": 22.8
+      }
+    },
+    {
+      "id": "mercedes-cla-350-4matic-electric",
+      "name": "Mercedes-Benz CLA 350 4MATIC (Electric)",
+      "productionYears": "2025-today",
+      "engine": "Dual Electric Motor (Permanent Magnet Synchronous Motors, AWD)",
+      "powertrainType": "electric",
+      "ps": 354,
+      "price": 62000,
+      "maxSpeed": 210,
+      "commonality": 15,
+      "autobahnPerformanceRating": 17.65,
+      "acceleration": {
+        "0_50": 2.0,
+        "0_100": 4.9,
+        "80_120": 2.9,
+        "0_200": 18.8,
+        "100_200": 13.9
+      }
+    },
+    {
+      "id": "bmw-1-series-f70-120i",
+      "name": "BMW 120i (F70) 170PS",
+      "productionYears": "2024-today",
+      "engine": "1.5L Inline-3 Turbo Petrol (B38, 48V Mild Hybrid)",
+      "powertrainType": "gasoline",
+      "ps": 170,
+      "price": 38900,
+      "maxSpeed": 226,
+      "commonality": 30,
+      "autobahnPerformanceRating": 12.23,
+      "acceleration": {
+        "0_50": 2.8,
+        "0_100": 7.8,
+        "80_120": 5.8,
+        "0_200": 34.5,
+        "100_200": 26.7
+      }
+    },
+    {
+      "id": "bmw-1-series-f70-m135-xdrive",
+      "name": "BMW M135 xDrive (F70) 300PS",
+      "productionYears": "2024-today",
+      "engine": "2.0L Inline-4 Turbo Petrol (B48, AWD)",
+      "powertrainType": "gasoline",
+      "ps": 300,
+      "price": 56000,
+      "maxSpeed": 250,
+      "commonality": 10,
+      "autobahnPerformanceRating": 20.09,
+      "acceleration": {
+        "0_50": 2.0,
+        "0_100": 4.9,
+        "80_120": 3.2,
+        "0_200": 17.2,
+        "100_200": 12.3
+      }
+    },
+    {
+      "id": "mercedes-benz-e300e-2023",
+      "name": "Mercedes-Benz E300e",
+      "productionYears": "2023-today",
+      "engine": "2.0L Inline-4 Turbo Petrol + Electric Motor (Plug-in Hybrid)",
+      "powertrainType": "hybrid",
+      "ps": 313,
+      "price": 64900,
+      "maxSpeed": 236,
+      "commonality": 25,
+      "autobahnPerformanceRating": 16.95,
+      "acceleration": {
+        "0_50": 2.4,
+        "0_100": 6.4,
+        "80_120": 3.9,
+        "0_200": 24.0,
+        "100_200": 17.6
+      }
+    },
+    {
+      "id": "mercedes-benz-e220d-2023",
+      "name": "Mercedes-Benz E220d",
+      "productionYears": "2023-today",
+      "engine": "2.0L Inline-4 Turbo Diesel (OM654M, 48V Mild Hybrid)",
+      "powertrainType": "diesel",
+      "ps": 220,
+      "price": 59900,
+      "maxSpeed": 238,
+      "commonality": 30,
+      "autobahnPerformanceRating": 14.19,
+      "acceleration": {
+        "0_50": 2.9,
+        "0_100": 7.6,
+        "80_120": 5.3,
+        "0_200": 31.0,
+        "100_200": 23.5
+      }
+    },
+    {
+      "id": "mercedes-benz-c200d-2024",
+      "name": "Mercedes-Benz C200d",
+      "productionYears": "2024-today",
+      "engine": "2.0L Inline-4 Turbo Diesel (OM654M, 48V Mild Hybrid)",
+      "powertrainType": "diesel",
+      "ps": 183,
+      "price": 52000,
+      "maxSpeed": 230,
+      "commonality": 40,
+      "autobahnPerformanceRating": 12.73,
+      "acceleration": {
+        "0_50": 3.0,
+        "0_100": 7.9,
+        "80_120": 5.6,
+        "0_200": 34.0,
+        "100_200": 26.0
+      }
+    },
+    {
+      "id": "mercedes-benz-c220d-2024",
+      "name": "Mercedes-Benz C220d",
+      "productionYears": "2024-today",
+      "engine": "2.0L Inline-4 Turbo Diesel (OM654M, 48V Mild Hybrid)",
+      "powertrainType": "diesel",
+      "ps": 220,
+      "price": 56000,
+      "maxSpeed": 245,
+      "commonality": 40,
+      "autobahnPerformanceRating": 15.17,
+      "acceleration": {
+        "0_50": 2.8,
+        "0_100": 7.3,
+        "80_120": 5.0,
+        "0_200": 29.5,
+        "100_200": 22.2
+      }
+    },
+    {
+      "id": "audi-a5-b10-2-0-tdi-204",
+      "name": "Audi A5 (B10) 2.0 TDI 204PS",
+      "productionYears": "2024-today",
+      "engine": "2.0L Inline-4 Turbo Diesel (EA288 evo, 48V Mild Hybrid)",
+      "powertrainType": "diesel",
+      "ps": 204,
+      "price": 59900,
+      "maxSpeed": 240,
+      "commonality": 25,
+      "autobahnPerformanceRating": 12.03,
+      "acceleration": {
+        "0_50": 2.9,
+        "0_100": 7.7,
+        "80_120": 5.2,
+        "0_200": 38.5,
+        "100_200": 30.0
+      }
+    },
+    {
+      "id": "vw-t-roc-r-4motion-300",
+      "name": "VW T-Roc R 4Motion",
+      "productionYears": "2019-2024",
+      "engine": "2.0L Inline-4 Turbo Petrol (EA888 evo4, AWD performance variant)",
+      "powertrainType": "gasoline",
+      "ps": 300,
+      "price": 49900,
+      "maxSpeed": 250,
+      "commonality": 5,
+      "autobahnPerformanceRating": 19.19,
+      "acceleration": {
+        "0_50": 2.0,
+        "0_100": 4.8,
+        "80_120": 3.3,
+        "0_200": 19.5,
+        "100_200": 14.8
+      }
+    },
+    {
+      "id": "mercedes-amg-c43-4matic-367-w205",
+      "name": "Mercedes-AMG C43 4MATIC",
+      "productionYears": "2016-2018",
+      "engine": "3.0L V6 Biturbo Petrol (M276 DE30 LA)",
+      "powertrainType": "gasoline",
+      "ps": 367,
+      "price": 61500,
+      "maxSpeed": 250,
+      "commonality": 5,
+      "autobahnPerformanceRating": 19.83,
+      "acceleration": {
+        "0_50": 2.0,
+        "0_100": 4.9,
+        "80_120": 3.4,
+        "0_200": 17.6,
+        "100_200": 12.8
+      }
+    },
+    {
+      "id": "porsche-911-carrera-991-1",
+      "name": "Porsche 911 Carrera 991.1",
+      "productionYears": "2011-2015",
+      "engine": "3.4L Flat-6 Naturally Aspirated Petrol (Boxer engine)",
+      "powertrainType": "gasoline",
+      "ps": 350,
+      "price": 89900,
+      "maxSpeed": 289,
+      "commonality": 8,
+      "autobahnPerformanceRating": 21.79,
+      "acceleration": {
+        "0_50": 2.0,
+        "0_100": 4.7,
+        "80_120": 3.3,
+        "0_200": 17.8,
+        "100_200": 13.0
+      }
+    },
+    {
+      "id": "audi-a6-c8-55-tfsi-340",
+      "name": "Audi A6 C8 55 TFSI 340PS",
+      "productionYears": "2019-2025",
+      "engine": "3.0L V6 Turbo Petrol (EA839, Mild Hybrid 48V)",
+      "powertrainType": "gasoline",
+      "ps": 340,
+      "price": 68900,
+      "maxSpeed": 250,
+      "commonality": 20,
+      "autobahnPerformanceRating": 18.93,
+      "acceleration": {
+        "0_50": 2.1,
+        "0_100": 5.0,
+        "80_120": 3.5,
+        "0_200": 19.7,
+        "100_200": 15.2
+      }
+    },
+    {
+      "id": "audi-tt-fv-40-tfsi-197",
+      "name": "Audi TT FV 40 TFSI 197PS",
+      "productionYears": "2018-2023",
+      "engine": "2.0L Inline-4 Turbo Petrol (EA888 evo3)",
+      "powertrainType": "gasoline",
+      "ps": 197,
+      "price": 39900,
+      "maxSpeed": 246,
+      "commonality": 10,
+      "autobahnPerformanceRating": 15.78,
+      "acceleration": {
+        "0_50": 2.5,
+        "0_100": 6.8,
+        "80_120": 4.9,
+        "0_200": 27.5,
+        "100_200": 21.0
+      }
+    },
+    {
+      "id": "mercedes-amg-g63-2024",
+      "name": "Mercedes-AMG G 63",
+      "productionYears": "2024-today",
+      "engine": "4.0L V8 Biturbo Petrol (M177, 48V Mild Hybrid)",
+      "powertrainType": "gasoline",
+      "ps": 585,
+      "price": 189000,
+      "maxSpeed": 220,
+      "commonality": 8,
+      "autobahnPerformanceRating": 17.81,
+      "acceleration": {
+        "0_50": 2.0,
+        "0_100": 4.4,
+        "80_120": 3.2,
+        "0_200": 19.0,
+        "100_200": 14.8
+      }
     }
   ]
 }
