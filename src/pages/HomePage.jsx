@@ -94,12 +94,14 @@ export default function HomePage() {
       <div className="max-w-4xl mx-auto px-6 pt-20 pb-16">
 
         {/* Header */}
-        <div className="mb-12">
+        <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold text-zinc-900 tracking-tight mb-2">
             Bin ich schnell?
           </h1>
           <p className="text-base text-zinc-500">
-            Vergleiche die Beschleunigung deines Autos mit anderen Fahrzeugen.
+            Du willst wissen, wie schnell du auf der Autobahn bist. Wir sagen es dir.<br/>
+            Realistisch. Keine 0-100 Drag Race Vergleiche unter Idealbedingungen.<br/>
+            Brutal ehrlich.
           </p>
         </div>
 

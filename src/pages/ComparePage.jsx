@@ -192,7 +192,7 @@ function ComparableList({ car, comparableCars, selectedPowertrain, onFilterChang
             <div key={c.id} onClick={() => onSelectCar(c)} className="flex items-center justify-between p-4 bg-zinc-50 rounded-lg hover:bg-zinc-100 transition-colors cursor-pointer">
               <div className="flex-1">
                 <p className="font-semibold text-zinc-900">{c.name}</p>
-                <p className="text-xs text-zinc-500">{c.ps} PS</p>
+                <p className="text-xs text-zinc-500">{c.ps} PS · {c.productionYears}</p>
               </div>
               <div className="text-right">
                 <p className="text-sm font-bold text-zinc-900 tabular-nums">{c.autobahnPerformanceRating?.toFixed(2)}</p>
@@ -264,38 +264,36 @@ export default function ComparePage() {
 
   const getFasterCars = () => {
     if (!reference) return []
-    const threshold = 1.0
     return filteredCars
       .filter(c => {
         if (c.id === car.id) return false
         const other = c.autobahnPerformanceRating
         if (!other) return false
-        return other - reference > threshold
-      })
-      .map(c => ({
-        car: c,
-        delta: c.autobahnPerformanceRating - reference
-      }))
-      .sort((a, b) => b.delta - a.delta)
-      .slice(0, 10)
-  }
-
-  const getSlowerCars = () => {
-    if (!reference) return []
-    const threshold = 1.0
-    return filteredCars
-      .filter(c => {
-        if (c.id === car.id) return false
-        const other = c.autobahnPerformanceRating
-        if (!other) return false
-        return reference - other > threshold
+        return other - reference > 1.0
       })
       .map(c => ({
         car: c,
         delta: c.autobahnPerformanceRating - reference
       }))
       .sort((a, b) => a.delta - b.delta)
-      .slice(0, 10)
+      .slice(0, 5)
+  }
+
+  const getSlowerCars = () => {
+    if (!reference) return []
+    return filteredCars
+      .filter(c => {
+        if (c.id === car.id) return false
+        const other = c.autobahnPerformanceRating
+        if (!other) return false
+        return reference - other > 1.0
+      })
+      .map(c => ({
+        car: c,
+        delta: c.autobahnPerformanceRating - reference
+      }))
+      .sort((a, b) => b.delta - a.delta)
+      .slice(0, 5)
   }
 
   const getSimilarCars = () => {
@@ -341,7 +339,7 @@ export default function ComparePage() {
 
         <div className="mb-12">
           <h1 className="text-3xl font-bold text-zinc-900 mb-1">{car.name}</h1>
-          <p className="text-sm text-zinc-500">{car.engine} · {car.ps} PS · {formatPrice(car.price)}</p>
+          <p className="text-sm text-zinc-500">{car.engine} · {car.ps} PS · {car.productionYears} · {formatPrice(car.price)}</p>
         </div>
 
         <PowertrainTypeFilter value={powertrainTypeFilter} onChange={setPowertrainTypeFilter} />

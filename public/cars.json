@@ -191,6 +191,63 @@
       }
     },
     {
+      "id": "vw-golf-8-gti-2-0-tsi-245",
+      "name": "VW Golf VIII GTI 2.0 TSI 245PS",
+      "productionYears": "2020-2024",
+      "engine": "2.0L Inline-4 Turbo Petrol (EA888 evo4)",
+      "powertrainType": "gasoline",
+      "ps": 245,
+      "price": 42900,
+      "maxSpeed": 250,
+      "commonality": 15,
+      "autobahnPerformanceRating": 17.04,
+      "acceleration": {
+        "0_50": 2.4,
+        "0_100": 6.2,
+        "80_120": 4.3,
+        "0_200": 25.0,
+        "100_200": 19.0
+      }
+    },
+    {
+      "id": "vw-golf-8-gti-clubsport-2-0-tsi-300",
+      "name": "VW Golf VIII GTI Clubsport 2.0 TSI 300PS",
+      "productionYears": "2020-2026",
+      "engine": "2.0L Inline-4 Turbo Petrol (EA888 evo4, high-output variant)",
+      "powertrainType": "gasoline",
+      "ps": 300,
+      "price": 49900,
+      "maxSpeed": 250,
+      "commonality": 10,
+      "autobahnPerformanceRating": 18.48,
+      "acceleration": {
+        "0_50": 2.1,
+        "0_100": 5.6,
+        "80_120": 3.8,
+        "0_200": 21.0,
+        "100_200": 15.8
+      }
+    },
+    {
+      "id": "vw-golf-8-r-2-0-tsi-320",
+      "name": "VW Golf VIII R 2.0 TSI 320PS",
+      "productionYears": "2020-2024",
+      "engine": "2.0L Inline-4 Turbo Petrol (EA888 evo4, AWD performance variant)",
+      "powertrainType": "gasoline",
+      "ps": 320,
+      "price": 54900,
+      "maxSpeed": 250,
+      "commonality": 10,
+      "autobahnPerformanceRating": 20.27,
+      "acceleration": {
+        "0_50": 1.9,
+        "0_100": 4.7,
+        "80_120": 3.1,
+        "0_200": 16.5,
+        "100_200": 12.0
+      }
+    },
+    {
       "id": "bmw-x5-g05-xdrive50e-313-2023",
       "name": "BMW X5 G05 xDrive50e 313PS",
       "productionYears": "2023-2026",
