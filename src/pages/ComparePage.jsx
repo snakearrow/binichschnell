@@ -71,7 +71,7 @@ function HeroStats({ car, stats, activeFilter, onFilterChange }) {
 function getPerformanceCategory(rating) {
   if (rating < 10) return { label: 'Niedrig', color: 'bg-red-100 text-red-700' }
   if (rating < 15) return { label: 'Mittel', color: 'bg-blue-100 text-blue-700' }
-  if (rating < 23) return { label: 'Gut', color: 'bg-green-100 text-green-700' }
+  if (rating < 21) return { label: 'Gut', color: 'bg-green-100 text-green-700' }
   return { label: 'Krass', color: 'bg-violet-100 text-violet-700' }
 }
 
@@ -264,8 +264,14 @@ export default function ComparePage() {
 
   const getFasterCars = () => {
     if (!reference) return []
+    const threshold = 1.0
     return filteredCars
-      .filter(c => c.id !== car.id && c.autobahnPerformanceRating && c.autobahnPerformanceRating > reference)
+      .filter(c => {
+        if (c.id === car.id) return false
+        const other = c.autobahnPerformanceRating
+        if (!other) return false
+        return other - reference > threshold
+      })
       .map(c => ({
         car: c,
         delta: c.autobahnPerformanceRating - reference
@@ -276,8 +282,14 @@ export default function ComparePage() {
 
   const getSlowerCars = () => {
     if (!reference) return []
+    const threshold = 1.0
     return filteredCars
-      .filter(c => c.id !== car.id && c.autobahnPerformanceRating && c.autobahnPerformanceRating < reference)
+      .filter(c => {
+        if (c.id === car.id) return false
+        const other = c.autobahnPerformanceRating
+        if (!other) return false
+        return reference - other > threshold
+      })
       .map(c => ({
         car: c,
         delta: c.autobahnPerformanceRating - reference

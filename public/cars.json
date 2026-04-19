@@ -10,7 +10,7 @@
       "price": 48495,
       "maxSpeed": 223,
       "commonality": 85,
-      "autobahnPerformanceRating": 6.42,
+      "autobahnPerformanceRating": 6.24,
       "acceleration": {
         "0_50": 3.2,
         "0_100": 9.3,
@@ -29,7 +29,7 @@
       "price": 42000,
       "maxSpeed": 230,
       "commonality": 60,
-      "autobahnPerformanceRating": 13.86,
+      "autobahnPerformanceRating": 11.06,
       "acceleration": {
         "0_50": 2.7,
         "0_100": 7.5,
@@ -48,7 +48,7 @@
       "price": 56000,
       "maxSpeed": 232,
       "commonality": 70,
-      "autobahnPerformanceRating": 13.63,
+      "autobahnPerformanceRating": 13.46,
       "acceleration": {
         "0_50": 2.9,
         "0_100": 7.6,
@@ -67,7 +67,7 @@
       "price": 44995,
       "maxSpeed": 222,
       "commonality": 75,
-      "autobahnPerformanceRating": 7.12,
+      "autobahnPerformanceRating": 7.20,
       "acceleration": {
         "0_50": 3.3,
         "0_100": 9.3,
@@ -79,14 +79,14 @@
     {
       "id": "vw-golf-8-1.5-tsi-act-150",
       "name": "VW Golf VIII 1.5 TSI ACT 150PS",
-      "productionYears": "2020-2024",
+      "productionYears": "2019-2026",
       "engine": "1.5L Inline-4 Turbo Petrol (EA211 evo, ACT)",
       "powertrainType": "gasoline",
       "ps": 150,
       "price": 28900,
       "maxSpeed": 224,
       "commonality": 95,
-      "autobahnPerformanceRating": 12.13,
+      "autobahnPerformanceRating": 9.51,
       "acceleration": {
         "0_50": 3.0,
         "0_100": 8.6,
@@ -105,7 +105,7 @@
       "price": 23950,
       "maxSpeed": 188,
       "commonality": 90,
-      "autobahnPerformanceRating": 3.64,
+      "autobahnPerformanceRating": 2.24,
       "acceleration": {
         "0_50": 4.2,
         "0_100": 10.8,
@@ -124,7 +124,7 @@
       "price": 32930,
       "maxSpeed": 202,
       "commonality": 80,
-      "autobahnPerformanceRating": 6.65,
+      "autobahnPerformanceRating": 4.68,
       "acceleration": {
         "0_50": 3.4,
         "0_100": 9.5,
@@ -143,7 +143,7 @@
       "price": 57000,
       "maxSpeed": 205,
       "commonality": 25,
-      "autobahnPerformanceRating": 16.21,
+      "autobahnPerformanceRating": 15.29,
       "acceleration": {
         "0_50": 2.6,
         "0_100": 5.6,
@@ -162,7 +162,7 @@
       "price": 58900,
       "maxSpeed": 230,
       "commonality": 35,
-      "autobahnPerformanceRating": 18.17,
+      "autobahnPerformanceRating": 15.95,
       "acceleration": {
         "0_50": 2.5,
         "0_100": 6.0,
@@ -181,7 +181,7 @@
       "price": 46990,
       "maxSpeed": 250,
       "commonality": 35,
-      "autobahnPerformanceRating": 20.48,
+      "autobahnPerformanceRating": 17.34,
       "acceleration": {
         "0_50": 2.8,
         "0_100": 6.4,
@@ -200,7 +200,7 @@
       "price": 89900,
       "maxSpeed": 250,
       "commonality": 10,
-      "autobahnPerformanceRating": 22.27,
+      "autobahnPerformanceRating": 19.30,
       "acceleration": {
         "0_50": 2.4,
         "0_100": 4.8,
@@ -219,7 +219,7 @@
       "price": 58900,
       "maxSpeed": 245,
       "commonality": 50,
-      "autobahnPerformanceRating": 16.01,
+      "autobahnPerformanceRating": 12.59,
       "acceleration": {
         "0_50": 3.1,
         "0_100": 7.6,
@@ -238,7 +238,7 @@
       "price": 29900,
       "maxSpeed": 208,
       "commonality": 40,
-      "autobahnPerformanceRating": 5.80,
+      "autobahnPerformanceRating": 3.40,
       "acceleration": {
         "0_50": 4.0,
         "0_100": 10.6,
@@ -257,13 +257,108 @@
       "price": 94900,
       "maxSpeed": 250,
       "commonality": 10,
-      "autobahnPerformanceRating": 21.29,
+      "autobahnPerformanceRating": 18.17,
       "acceleration": {
         "0_50": 2.2,
         "0_100": 5.0,
         "80_120": 3.4,
         "0_200": 22.5,
         "100_200": 17.5
+      }
+    },
+    {
+      "id": "opel-corsa-f-1-2-turbo-mhev-110",
+      "name": "Opel Corsa F 1.2 Turbo Hybrid 48V",
+      "productionYears": "2025-2026",
+      "engine": "1.2L Inline-3 Turbo Petrol (PureTech-based, 48V Mild Hybrid)",
+      "powertrainType": "gasoline",
+      "ps": 110,
+      "price": 22900,
+      "maxSpeed": 188,
+      "commonality": 20,
+      "autobahnPerformanceRating": 2.26,
+      "acceleration": {
+        "0_50": 4.3,
+        "0_100": 9.9,
+        "80_120": 8.9,
+        "0_200": 0,
+        "100_200": 0
+      }
+    },
+    {
+      "id": "toyota-auris-1-6-valvematic",
+      "name": "Toyota Auris 1.6 Valvematic",
+      "productionYears": "2015-2018",
+      "engine": "1.6L Inline-4 Naturally Aspirated Petrol (Valvematic)",
+      "powertrainType": "gasoline",
+      "ps": 132,
+      "price": 23500,
+      "maxSpeed": 190,
+      "commonality": 10,
+      "autobahnPerformanceRating": 2.32,
+      "acceleration": {
+        "0_50": 4.0,
+        "0_100": 10.5,
+        "80_120": 8.7,
+        "0_200": 0,
+        "100_200": 0
+      }
+    },
+    {
+      "id": "audi-rs3-8ya-2-5-tfsi-400",
+      "name": "Audi RS3 8Y (Facelift) 400PS",
+      "productionYears": "2024-2026",
+      "engine": "2.5L Inline-5 Turbo Petrol (EA855 EVO)",
+      "powertrainType": "gasoline",
+      "ps": 400,
+      "price": 69900,
+      "maxSpeed": 250,
+      "commonality": 5,
+      "autobahnPerformanceRating": 21.66,
+      "acceleration": {
+        "0_50": 1.9,
+        "0_100": 3.8,
+        "80_120": 2.7,
+        "0_200": 12.8,
+        "100_200": 9.0
+      }
+    },
+    {
+      "id": "kia-stinger-gt-3-3-t-gdi",
+      "name": "Kia Stinger GT 3.3 T-GDI",
+      "productionYears": "2017-2023",
+      "engine": "3.3L V6 Twin-Turbo Petrol (Lambda II T-GDI)",
+      "powertrainType": "gasoline",
+      "ps": 366,
+      "price": 58000,
+      "maxSpeed": 270,
+      "commonality": 1,
+      "autobahnPerformanceRating": 20.38,
+      "acceleration": {
+        "0_50": 2.0,
+        "0_100": 5.0,
+        "80_120": 3.6,
+        "0_200": 18.5,
+        "100_200": 13.8
+      }
+    },
+    {
+      "id": "porsche-taycan-2023-408",
+      "name": "Porsche Taycan (Base) 408PS",
+      "productionYears": "2021-2024",
+      "engine": "Dual Electric Motor (Permanent Magnet Synchronous Motors, AWD)",
+      "powertrainType": "electric",
+      "ps": 408,
+      "price": 89900,
+      "maxSpeed": 230,
+      "commonality": 10,
+      "autobahnPerformanceRating": 19.06,
+      "acceleration": {
+        "0_50": 1.8,
+        "0_100": 5.4,
+        "80_120": 3.1,
+        "0_200": 17.6,
+        "100_200": 12.2
       }
     },
     {
@@ -276,7 +371,7 @@
       "price": 58000,
       "maxSpeed": 250,
       "commonality": 5,
-      "autobahnPerformanceRating": 23.01,
+      "autobahnPerformanceRating": 20.14,
       "acceleration": {
         "0_50": 2.0,
         "0_100": 4.3,
